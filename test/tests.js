@@ -1,6 +1,9 @@
 /*global Event*/
 
-module.exports = function(yo, test) {
+module.exports = function(createEl, updateEl, test) {
+
+  var yo = createEl
+  yo.update = updateEl
 
   test('event attribute gets updated', function (t) {
     t.plan(2)
